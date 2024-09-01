@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*
+        Typically, this font-family property will test the font 
+        on the left is supported by the browser. If it does, it will uses that font
+        and ignores the rest. If it doesn't, it will test the next font specified 
+        on the right and apply the same conditions again. It repeats for each font 
+        from left to right until at least one font is supported by the browser
+        or there is none of the font that is supported by the browser. 
+    */
+    font-family: Helvetica, Arial; 
+}
+
+body{
+    min-height: 100vh;
+    /* Includes the image fomr the images folder as the background of the webpage! */
+    background: url(./images/Bright\ Sky\ Background.jpg) no-repeat;
+    /* The entire image covers the entire background of this webpage here */
+    background-size: cover;
+    /* The image is centered as the background for this webpage! */
+    background-position: center;
+}
