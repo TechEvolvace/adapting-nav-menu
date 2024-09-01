@@ -22,3 +22,35 @@ body{
     /* The image is centered as the background for this webpage! */
     background-position: center;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3.5% 5px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    flex: 1 1 32px;
+}
+
+.title{
+    font-size: 1.5em;
+    color: #C65D36;
+    -webkit-text-stroke-width: 0.2px; 
+    -webkit-text-stroke-color: white;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.2em; 
+    color: #C65D36; 
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    -webkit-text-stroke-width: 0.2px; 
+    -webkit-text-stroke-color: white;
+}
