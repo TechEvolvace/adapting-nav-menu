@@ -60,6 +60,7 @@ main{
     margin: 2%;
 }
 
+
 .info-card{
     width: 100%; 
     display: flex; 
@@ -67,8 +68,9 @@ main{
     background-color: rgba(242, 241, 230, 0.35);
     border-radius: 15px;
     padding: 1%;
+    margin: 5% 0%;
 }
 
-.intro h2, .intro p{
+.info-card h2, .info-card p{
     margin: 1%;
 }
