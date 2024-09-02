@@ -24,7 +24,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -53,4 +53,22 @@ header{
     margin-left: 20px;
     -webkit-text-stroke-width: 0.2px; 
     -webkit-text-stroke-color: white;
+}
+
+main{
+    padding: 0%; 
+    margin: 2%;
+}
+
+.info-card{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    background-color: rgba(242, 241, 230, 0.35);
+    border-radius: 15px;
+    padding: 1%;
+}
+
+.intro h2, .intro p{
+    margin: 1%;
 }
