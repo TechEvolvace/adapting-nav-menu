@@ -75,3 +75,8 @@ main{
 .info-card h2, .info-card p{
     margin: 1%;
 }
+
+.info-card > p > a {
+    color: #FD5E53;
+    -webkit-text-stroke: 0.15px black;
+}
