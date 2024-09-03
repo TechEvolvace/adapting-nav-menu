@@ -64,6 +64,7 @@ main{
 .info-card{
     width: 100%; 
     display: flex; 
+    flex-direction: column;
     flex-wrap: wrap; 
     background-color: rgba(242, 241, 230, 0.35);
     border-radius: 15px;
@@ -73,4 +74,9 @@ main{
 
 .info-card h2, .info-card p{
     margin: 1%;
+}
+
+.info-card > p > a {
+    color: #FD5E53;
+    -webkit-text-stroke: 0.15px black;
 }
