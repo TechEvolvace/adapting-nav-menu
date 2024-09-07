@@ -1,7 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
     /*
         Typically, this font-family property will test the font 
         on the left is supported by the browser. If it does, it will uses that font
@@ -13,20 +10,26 @@
     font-family: Helvetica, Arial; 
 }
 
+:root{
+    --content-original-horizontal-margin: 1em;
+    --vertical-margin-between-info-cards: 5%;
+}
+
 body{
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     /* Includes the image fomr the images folder as the background of the webpage! */
     background: url(./images/Bright\ Sky\ Background.jpg) no-repeat;
-    /* The entire image covers the entire background of this webpage here */
-    background-size: cover;
+    /* The sky part of the image covers the entire background of this webpage here */
+    background-size: center;
     /* The image is centered as the background for this webpage! */
     background-position: center;
 }
 
 header{
     position: relative;
-    top: 0;
-    left: 0;
+    margin: 0 calc(var(--content-original-horizontal-margin)) 0;
     width: 100%;
     padding: 3.5% 5px;
     background: transparent;
@@ -44,6 +47,10 @@ header{
     -webkit-text-stroke-color: white;
 }
 
+.navbar{
+    margin: 0 var(--content-original-horizontal-margin) 0;
+}
+
 .navbar a{
     position: relative;
     font-size: 1.2em; 
@@ -57,19 +64,19 @@ header{
 
 main{
     padding: 0%; 
-    margin: 2%;
+    margin: 0 calc(var(--content-original-horizontal-margin)) 0;
 }
 
 
 .info-card{
-    width: 100%; 
+    width: 96%; 
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap; 
     background-color: rgba(231, 230, 224, 0.775);
     border-radius: 15px;
     padding: 1%;
-    margin: 5% 0%;
+    margin: var(--vertical-margin-between-info-cards) 0;
 }
 
 .info-card h2, .info-card p{
